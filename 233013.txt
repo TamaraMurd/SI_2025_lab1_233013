@@ -206,6 +206,11 @@ $ git branch
 * master
 
 $ git merge 4-sort-tasks-by-priority
+Updating b4c7937..9371269
+Fast-forward
+ SI2025Lab1Main.java | 18 +++++++++++++-----
+ 1 file changed, 13 insertions(+), 5 deletions(-)
+
 
 
 $ git status
@@ -217,6 +222,11 @@ $ git pull
 
 $ git push origin master
 
+
+20. немав никакви конфликти 
+
+22. немав никакви конфликти
+fast-forward
 
 $ git log --oneline --graph --all > logs.txt
 
