@@ -1,0 +1,6 @@
+* 9371269 Adding sort tasks by priority
+* 8bc3eaf Adding 2- find all completed tasks
+* ccf1f55 Adding 1- remove a task by name
+* b4c7937 Add starter code
+* de38abb Initial commit
+* 8080240 Adding README.md

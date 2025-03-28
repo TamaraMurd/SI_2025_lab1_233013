@@ -1,0 +1,483 @@
+
+User@DESKTOP-7P133A4 MINGW64 ~
+$ mkdir SI_2025_lab1_233013
+
+User@DESKTOP-7P133A4 MINGW64 ~
+$ cd SI_2025_lab1_233013
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013
+$ git init
+Initialized empty Git repository in C:/Users/User/SI_2025_lab1_233013/.git/
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git remote add origin https://github.com/TamaraMurd/SI_2025_lab1_233013       
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git remote -v
+origin  https://github.com/TamaraMurd/SI_2025_lab1_233013 (fetch)
+origin  https://github.com/TamaraMurd/SI_2025_lab1_233013 (push)
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ echo "# SI_2025_lab1_233013" > README.md
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ echo echo "# SI_2025_lab1_233013" > README.md"
+> echo "### Tamara Murdjoska" >> README.md
+> echo "### 233013" >> README.md
+> ^C
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ echo "# SI_2025_lab1_233013" > README.md
+echo "### Tamara Murdjoska" >> README.md
+echo "### 233013" >> README.md
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ cat README.md
+# SI_2025_lab1_233013
+### Tamara Murdjoska
+### 233013
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ $ echo "# SI_2025_lab1_233013" > README.md
+echo "### Tamara Murdjoska" >> README.md
+echo "### 233013" >> README.md
+bash: $: command not found
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ > README.md
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ cat README.md
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ notepad README.md
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ cat README.md
+Tamara Murdjoska
+233013
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git add README.md
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git commit -m "Adding README.md"
+[master (root-commit) 8080240] Adding README.md
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git push origin master
+To https://github.com/TamaraMurd/SI_2025_lab1_233013
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/TamaraMurd/SI_2025_lab1_2
+33013'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git pull origin master --release
+error: unknown option `release'
+usage: git pull [<options>] [<repository> [<refspec>...]]
+
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]progress       force progress reporting
+    --[no-]recurse-submodules[=<on-demand>]
+                          control for recursive fetching of submodules
+
+Options related to merging
+    -r, --[no-]rebase[=(false|true|merges|interactive)]
+                          incorporate changes by rebasing rather than merging
+    -n                    do not show a diffstat at the end of the merge
+    --[no-]stat           show a diffstat at the end of the merge
+    --[no-]log[=<n>]      add (at most <n>) entries from shortlog to merge commi
+t message
+    --[no-]signoff[=...]  add a Signed-off-by trailer
+    --[no-]squash         create a single commit instead of doing a merge
+    --[no-]commit         perform a commit if the merge succeeds (default)
+    --[no-]edit           edit message before committing
+    --[no-]cleanup <mode> how to strip spaces and #comments from message
+    --[no-]ff             allow fast-forward
+    --ff-only             abort if fast-forward is not possible
+    --[no-]verify         control use of pre-merge-commit and commit-msg hooks
+    --[no-]verify-signatures
+                          verify that the named commit has a valid GPG signature
+    --[no-]autostash      automatically stash/stash pop before and after
+    -s, --[no-]strategy <strategy>
+                          merge strategy to use
+    -X, --[no-]strategy-option <option=value>
+                          option for selected merge strategy
+    -S, --[no-]gpg-sign[=<key-id>]
+                          GPG sign commit
+    --[no-]allow-unrelated-histories
+                          allow merging unrelated histories
+
+Options related to fetching
+    --[no-]all            fetch from all remotes
+    -a, --[no-]append     append to .git/FETCH_HEAD instead of overwriting
+    --[no-]upload-pack <path>
+                          path to upload pack on remote end
+    -f, --[no-]force      force overwrite of local branch
+    -t, --[no-]tags       fetch all tags and associated objects
+    -p, --[no-]prune      prune remote-tracking branches no longer on remote
+    -j, --[no-]jobs[=<n>] number of submodules pulled in parallel
+    --[no-]dry-run        dry run
+    -k, --[no-]keep       keep downloaded pack
+    --[no-]depth <depth>  deepen history of shallow clone
+    --[no-]shallow-since <time>
+                          deepen history of shallow repository based on time
+    --[no-]shallow-exclude <ref>
+                          deepen history of shallow clone, excluding ref
+    --[no-]deepen <n>     deepen history of shallow clone
+    --unshallow           convert to a complete repository
+    --[no-]update-shallow accept refs that update .git/shallow
+    --refmap <refmap>     specify fetch refmap
+    -o, --[no-]server-option <server-specific>
+                          option to transmit
+    -4, --[no-]ipv4       use IPv4 addresses only
+    -6, --[no-]ipv6       use IPv6 addresses only
+    --[no-]negotiation-tip <revision>
+                          report that we have only objects reachable from this o
+bject
+    --[no-]show-forced-updates
+                          check for forced-updates on all updated branches
+    --[no-]set-upstream   set upstream for git pull/fetch
+
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git add .
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git rebase --continue
+fatal: no rebase in progress
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git push origin master
+To https://github.com/TamaraMurd/SI_2025_lab1_233013
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/TamaraMurd/SI_2025_lab1_2
+33013'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git push origin master --force
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 251 bytes | 251.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/TamaraMurd/SI_2025_lab1_233013
+ + bf7027c...8080240 master -> master (forced update)
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ notepad README.md
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git add README.md
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git commit -m "Initial commit"
+[master de38abb] Initial commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 275 bytes | 275.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/TamaraMurd/SI_2025_lab1_233013
+   8080240..de38abb  master -> master
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ notepad SI2025Lab1Main.java
+
+
+
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ ls
+README.md  SI2025Lab1Main.java
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git add SI2025Lab1Main.java
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git commit -m "Add starter code"
+[master b4c7937] Add starter code
+ 1 file changed, 127 insertions(+)
+ create mode 100644 SI2025Lab1Main.java
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.21 KiB | 1.21 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/TamaraMurd/SI_2025_lab1_233013
+   de38abb..b4c7937  master -> master
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git pull origin master
+From https://github.com/TamaraMurd/SI_2025_lab1_233013
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git log --oneline
+b4c7937 (HEAD -> master, origin/master) Add starter code
+de38abb Initial commit
+8080240 Adding README.md
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git fetch origin
+From https://github.com/TamaraMurd/SI_2025_lab1_233013
+ * [new branch]      1-remove-a-task-by-name -> origin/1-remove-a-task-by-name
+ * [new branch]      2-find-all-completed-tasks -> origin/2-find-all-completed-t
+asks
+ * [new branch]      3-list-tasks-sorted-by-name -> origin/3-list-tasks-sorted-b
+y-name
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git checkout -b 1-remove-a-task-by-name
+Switched to a new branch '1-remove-a-task-by-name'
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (1-remove-a-task-by-name)
+$ git branch
+* 1-remove-a-task-by-name
+  master
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (1-remove-a-task-by-name)
+$ ls
+README.md  SI2025Lab1Main.java
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (1-remove-a-task-by-name)
+$ git branch
+* 1-remove-a-task-by-name
+  master
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (1-remove-a-task-by-name)
+$ pwd
+/c/Users/User/SI_2025_lab1_233013
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (1-remove-a-task-by-name)
+$ git add .
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (1-remove-a-task-by-name)
+$ git commit -m "Adding 1- remove a task by name"
+[1-remove-a-task-by-name ccf1f55] Adding 1- remove a task by name
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (1-remove-a-task-by-name)
+$ git push -u origin 1-remove-a-task-by-name
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 513 bytes | 513.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/TamaraMurd/SI_2025_lab1_233013
+   b4c7937..ccf1f55  1-remove-a-task-by-name -> 1-remove-a-task-by-name
+branch '1-remove-a-task-by-name' set up to track 'origin/1-remove-a-task-by-name
+'.
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (1-remove-a-task-by-name)
+$ git fetch
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (1-remove-a-task-by-name)
+$ git branch
+* 1-remove-a-task-by-name
+  master
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (1-remove-a-task-by-name)
+$ git add .
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (1-remove-a-task-by-name)
+$ git reset
+Unstaged changes after reset:
+M       SI2025Lab1Main.java
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (1-remove-a-task-by-name)
+$ git checkout -b 2-find-all-completed-tasks
+Switched to a new branch '2-find-all-completed-tasks'
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (2-find-all-completed-tasks)
+$ git branch
+  1-remove-a-task-by-name
+* 2-find-all-completed-tasks
+  master
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (2-find-all-completed-tasks)
+$ git add .
+\
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (2-find-all-completed-tasks)
+$ git add .
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (2-find-all-completed-tasks)
+$ git commit -m "Adding 2- find all completed tasks"
+[2-find-all-completed-tasks 8bc3eaf] Adding 2- find all completed tasks
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (2-find-all-completed-tasks)
+$ git push -u origin 2-find-all-completed-tasks
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 416 bytes | 416.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/TamaraMurd/SI_2025_lab1_233013
+   b4c7937..8bc3eaf  2-find-all-completed-tasks -> 2-find-all-completed-tasks
+branch '2-find-all-completed-tasks' set up to track 'origin/2-find-all-completed
+-tasks'.
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (2-find-all-completed-tasks)
+$ git fetch
+From https://github.com/TamaraMurd/SI_2025_lab1_233013
+ * [new branch]      4-sort-tasks-by-priority -> origin/4-sort-tasks-by-priority
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (2-find-all-completed-tasks)
+$ git checkout -b 4-sort-tasks-by-priority
+Switched to a new branch '4-sort-tasks-by-priority'
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (4-sort-tasks-by-priority)
+$ git branch
+  1-remove-a-task-by-name
+  2-find-all-completed-tasks
+* 4-sort-tasks-by-priority
+  master
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (4-sort-tasks-by-priority)
+$ git add .
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (4-sort-tasks-by-priority)
+$ git commit -m "Adding sort tasks by priority"
+[4-sort-tasks-by-priority 9371269] Adding sort tasks by priority
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (4-sort-tasks-by-priority)
+$ git push -u origin 4-sort-tasks-by-priority
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 456 bytes | 456.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/TamaraMurd/SI_2025_lab1_233013
+   b4c7937..9371269  4-sort-tasks-by-priority -> 4-sort-tasks-by-priority
+branch '4-sort-tasks-by-priority' set up to track 'origin/4-sort-tasks-by-priori
+ty'.
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (4-sort-tasks-by-priority)
+$ git checkout master
+Switched to branch 'master'
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git branch
+  1-remove-a-task-by-name
+  2-find-all-completed-tasks
+  4-sort-tasks-by-priority
+* master
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git merge 4-sort-tasks-by-priority
+Updating b4c7937..9371269
+Fast-forward
+ SI2025Lab1Main.java | 18 +++++++++++++-----
+ 1 file changed, 13 insertions(+), 5 deletions(-)
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git push origin master
+To https://github.com/TamaraMurd/SI_2025_lab1_233013
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/TamaraMurd/SI_2025_lab1_2
+33013'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git pull
+remote: Enumerating objects: 2, done.
+remote: Counting objects: 100% (2/2), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (2/2), 1.79 KiB | 107.00 KiB/s, done.
+From https://github.com/TamaraMurd/SI_2025_lab1_233013
+   b4c7937..0da843d  master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git push origin master
+To https://github.com/TamaraMurd/SI_2025_lab1_233013
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/TamaraMurd/SI_2025_lab1_2
+33013'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git push origin master --force
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/TamaraMurd/SI_2025_lab1_233013
+ + 0da843d...9371269 master -> master (forced update)
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git log --oneline --graph --all > logs.txt
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ notepad INDEX.txt
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git reset INDEX.txt
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ rm INDEX.txt
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        logs.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@DESKTOP-7P133A4 MINGW64 ~/SI_2025_lab1_233013 (master)
+$ notepad 233013.txt
